@@ -8,7 +8,7 @@ The examples are from [the grpc github repository](https://github.com/grpc/grpc/
 Enter the IP of your server in the `greeter_client.py` file in the `run` method.
 It should look like this:
 
-```
+```python
 def run():
   channel = grpc.insecure_channel('yourIpHere:50505')
   stub = helloworld_pb2.GreeterStub(channel)
